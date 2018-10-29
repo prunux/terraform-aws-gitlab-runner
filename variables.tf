@@ -26,7 +26,7 @@ variable "subnet_id_gitlab_runner" {
 variable "instance_type" {
   description = "Instance type used for the gitlab-runner."
   type        = "string"
-  default     = "t2.micro"
+  default     = "t3.micro"
 }
 
 # list with amazon linux optimized images per region
@@ -63,7 +63,7 @@ variable "ssh_public_key" {
 
 variable "docker_machine_instance_type" {
   description = "Instance type used for the instances hosting docker-machine."
-  default     = "m4.large"
+  default     = "m5.large"
 }
 
 variable "docker_machine_spot_price_bid" {
